@@ -1,0 +1,21 @@
+body {
+  background-color: cadetblue;
+}
+.container {
+  text-align: center;
+  background-color: blanchedalmond;
+}
+.todo {
+  text-align: center;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  margin: 10px 20px;
+  padding: 10px;
+}
