@@ -21,8 +21,12 @@ const Todo = ({ text,todos,todo ,setTodos}) => {
 
   return ( 
     <div className="todo">
-      <li className={`todo-item ${todo.completed ? "completed" : ""}`}>{text}</li>
-      <button
+      <div className="row">
+        <div className="col-4">
+        <li className={`todo-item ${todo.completed ? "completed" : ""}`}>{text}</li>
+        </div>
+        <div className="col-4">
+        <button
         onClick={handleComplete}
         className="complete">
         <FontAwesomeIcon icon={faCheckCircle} />
@@ -33,6 +37,10 @@ const Todo = ({ text,todos,todo ,setTodos}) => {
         className="trash">
         <FontAwesomeIcon icon={faTrash} />
        </button>
+      </div>
+     
+    </div>
+     
       </div>
    );
 }

@@ -21,15 +21,17 @@ const Form = ({ input, todos, setInput, setTodos }) => {
     <div className="todoInput">
            
      <form >
-        <div className="form-row">
-              <div className="col-6">
+        <div className="row">
+              <div className="col-5">
               
-                <input value ={input} onChange={handleInputChange} id="todo" type="text" className="form-control" placeholder="Add your todo" />
-                <button onClick={handleSubmit}  type='submit'>
+            <input value={input} onChange={handleInputChange} id="todo" type="text" className="form-control" placeholder="Please,add your todo list here!" />
+          </div>
+          <div className="col-2">
+                <button onClick={handleSubmit} className="add" type='submit'>
                   <FontAwesomeIcon icon={faPlusCircle} />
                   </button>
               </div>
-            <div className="col-6">
+            <div className="col-4">
               <select name="todoSelect" id="todoSelect">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
@@ -37,7 +39,7 @@ const Form = ({ input, todos, setInput, setTodos }) => {
               </select>
             </div>
         </div>
-     </form>
+      </form>
     </div>
    
    );
