@@ -47,7 +47,8 @@ li.todo-item {
 
 ul {
   list-style-type: none;
-  color:orangered;
+  color: orangered;
+  font-size: x-large;
 }
 button,
 input,

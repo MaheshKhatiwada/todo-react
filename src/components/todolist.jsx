@@ -2,11 +2,11 @@ import React from 'react';
 import Todo from "./todo"
 
 
-const TodoList = ({ todos, setTodos }) => {
-  return ( 
+const TodoList = ({ todos, setTodos,filteredTodos }) => {
+  return (
     <div className="todolist">
       <ul className="todolist_ul">
-        {todos.map(todo =>
+        {filteredTodos.map(todo =>
           (<Todo
             text={todo.text}
             key={todo.id}
@@ -15,11 +15,11 @@ const TodoList = ({ todos, setTodos }) => {
             setTodos={setTodos}
           />)
         )}
-        
+
 
       </ul>
     </div>
    );
 }
- 
+
 export default TodoList;
